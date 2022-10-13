@@ -1,0 +1,37 @@
+.location{
+    padding-left: 30%;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    font-size: 38px;
+    background-color: #eaeaea;
+    color: #4f4f4f;
+    border-top: 5px solid rgba(222,222,222,0.71);
+    &--text{
+        display: inline;
+        @include text-font;
+    }
+    &--icone{
+        margin-right: 3%;
+        color: rgb(68, 68, 68);
+    }
+}
+
+
+// Réservation
+
+.reservation
+{
+    @include text-font();
+    text-align: center;
+    margin-top: 110px;
+    &--title{
+        font-size: 44px;
+        margin-left: 23%;
+        margin-right: 23%;
+    }
+    &--subtitle{
+        font-size: 34px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}

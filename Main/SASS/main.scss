@@ -1,0 +1,20 @@
+
+@import "./Base/normalize";
+@import "./Base/font";
+
+@import "./Composants/animations";
+@import "./Composants/buttons";
+
+@import "./Layouts/header_home";
+@import "./Layouts/header_menu";
+@import "./Layouts/footer";
+
+@import "./Pages/home";
+@import "./Pages/menu.scss";
+@import "./Utils/variables.scss";
+
+
+body
+{
+    margin: 0;
+}
