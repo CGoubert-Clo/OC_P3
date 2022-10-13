@@ -311,18 +311,19 @@ template {
 }
 
 .header_home {
-  height: 161px;
+  height: 62px;
 }
 .header_home--logo {
   position: relative;
-  height: 72px;
-  top: 56px;
+  height: 32px;
+  top: 20px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  width: 42%;
 }
 .header_home--arrow {
   display: none;
@@ -337,37 +338,42 @@ template {
 }
 
 .location {
-  padding-left: 30%;
-  padding-top: 41px;
-  padding-bottom: 41px;
-  font-size: 38px;
+  padding-left: 28%;
+  padding-bottom: 16px;
+  padding-top: 17px;
+  font-size: 16px;
   background-color: #eaeaea;
-  color: #4f4f4f;
-  border-top: 5px solid rgba(222, 222, 222, 0.71);
+  -webkit-box-shadow: inset 0px 4px 4px -2px rgba(117, 117, 117, 0.36);
+  box-shadow: inset 0px 4px 4px -2px rgba(117, 117, 117, 0.36);
 }
 .location--text {
   display: inline;
   font-family: "Roboto", sans-serif;
 }
 .location--icone {
-  margin-right: 3%;
+  margin-right: 4%;
   color: rgb(68, 68, 68);
 }
 
 .reservation {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  margin-top: 110px;
+  margin-top: 40px;
+  font-weight: normal;
 }
 .reservation--title {
-  font-size: 44px;
-  margin-left: 23%;
-  margin-right: 23%;
+  font-size: 24px;
+  margin-left: 14%;
+  margin-right: 18%;
+  margin-bottom: 12px;
 }
 .reservation--subtitle {
-  font-size: 34px;
-  margin-left: 20%;
-  margin-right: 20%;
+  font-size: 18px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 0;
+  font-weight: 100;
+  opacity: 0.8;
 }
 
 body {

@@ -1,13 +1,15 @@
 .header_home{
-    height: 161px;
+    height: 62px;
     &--logo{
         position: relative;
-        height: 72px;
-        top: 56px;
+        height: 32px;
+        top: 20px;
         text-align: center;
         display: flex;
         margin-left: auto;
-        margin-right: auto;        
+        margin-right: auto;    
+        width: 42%;    
+        
     }
     &--arrow{
         display: none;

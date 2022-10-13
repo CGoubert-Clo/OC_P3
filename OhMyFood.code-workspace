@@ -9,7 +9,7 @@
             {
                 "format": "expanded",
                 "extensionName": ".css",
-                "savePath": "Public/css"
+                "savePath": "./Public/css"
             },
 
         ],
