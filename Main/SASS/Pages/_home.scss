@@ -8,7 +8,15 @@
     box-shadow: inset 0px 4px 4px -2px rgba(117,117,117,0.36);
     &--text{
         display: inline;
-        @include text-font;
+        background-color: #eaeaea;
+        border: none;
+        &::placeholder{
+            color: black;
+        }
+        &:focus{
+            border: none;
+            outline: none;
+        }
     }
     &--icone{
         margin-right: 4%;
@@ -21,10 +29,11 @@
 
 .reservation
 {
-    @include text-font();
     text-align: center;
-    margin-top: 40px;
+    padding-top: 24px;
+    padding-bottom: 60px;
     font-weight: normal;
+    background-color: #f7f7f7;
     &--title{
         font-size: 24px;
         margin-left: 14%;
@@ -40,3 +49,163 @@
         opacity: 0.8;
     }
 }
+
+
+// Explication
+
+.explication{
+    margin-bottom: 64px;
+    &--title{
+        margin-top: 46px;
+        margin-left: 5%;
+        margin-bottom: 26px;
+    }
+    &--card{
+        margin-left: 8%;
+        margin-right: 6%;
+        background-color: #f7f7f7;
+        border-radius: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 26px;
+        -webkit-box-shadow: 0px 6px 15px -6px rgba(0,0,0,0.52); 
+box-shadow: 0px 6px 15px -6px rgba(0,0,0,0.52);
+        &__number{
+            position: relative;
+            color: white;
+            background-color: $primary-color;
+            left: -10px;
+            top: -1px;
+            width: 24px;
+            line-height: 24px;
+            border-radius: 50%;
+            text-align: center;
+        height: 24px;
+        font-size: 14px;
+        }
+        &__icon{
+            margin-left: 2%;
+            margin-right: 7%;
+            font-size: 20px;
+            padding-top: 16px;
+            color: grey;
+        }
+        & .list-icon{
+            font-size: 18px;
+            margin-left: 2.5%;
+            margin-right: 5%;
+
+        }
+        & .store-icon{
+            color: $primary-color;
+            font-size: 18px;
+            margin-left: 2.5%;
+            margin-right: 5%;
+        }
+        &__title{
+            font-weight: bold;
+        }
+    }
+    & p{
+        display: inline-block;
+    }
+}
+
+
+// Restaurants
+
+.restaurants{
+    background-color: #f7f7f7;
+    margin-bottom: 62px;
+    &--title{
+        margin-left: 5%;
+        padding-top: 52px;
+        margin-bottom: 25px;
+    }
+    &--card{
+        height: 250px;
+        background-color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 18px;
+        border-radius: 20px;
+        -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25); 
+box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
+        &__img{
+            height: 174px;
+            width: 100%;
+            overflow: hidden;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+    }
+        & img{
+        width: 100%;
+        position: relative;
+        top: -55px;
+        }
+        &__title{
+            padding-left: 4%;
+            font-size: 18px;
+            margin-top: 14px;
+            margin-bottom: 0;
+            position: relative;
+            top: -40px;
+        }
+        &__text{
+            padding-left: 4%;
+            margin-top: 4px;
+            position: relative;
+            top: -40px;
+        }
+        &__heart{
+            display: inline;
+            position: relative;
+            top: -94px;
+            left: 86%;
+            font-size: 23px;
+        }
+
+        &:nth-child(4){
+            & h3{
+                position: inherit;
+            }
+            & p{
+                position: inherit;
+            }
+            & i{
+                top: -50px;
+            }
+        }
+        &:nth-child(5){
+            & h3{
+                position: inherit;
+            }
+            & p{
+                position: inherit;
+            }
+            & i{
+                top: -50px;
+            }
+        }
+    }
+    
+}
+
+.nouveau{
+    color: red;
+    position: relative;
+    width: 82px;
+    top: -175px;
+    left: 71%;
+    background-color: $tertiary-color;
+    color: #008766;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 3px;
+}
+
+

@@ -1,0 +1,73 @@
+@import "../Utils/variables";
+
+
+.reservation{
+    & a{
+        text-decoration: none;
+    }
+    &--btn{
+        color: white;
+        margin-top: 32px;
+        margin-left: 22%;
+        margin-right: 20%;
+        padding-top: 16px;
+        height: 32px;
+        border-radius: 25px;
+        background-image: linear-gradient(to right bottom, #ff79da, #e86edb, 25%, #cf64dc, #b35cdc, #9356dc);
+        -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55); 
+        box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.55);
+        transition: box-shadow 200ms;
+        
+        &:hover{
+            opacity: 0.96;
+            -webkit-box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.95); 
+            box-shadow: 0px 3px 15px -4px rgba(0,0,0,0.95);
+        }
+        }
+    }
+
+
+
+
+.fa-heart {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding:.2em;
+    &:hover{
+        font-weight: 700;
+        animation: full-heart 400ms ease-in-out both;
+    }
+
+}
+
+
+
+@keyframes full-heart {
+	0% {
+		opacity: .5;
+        color: #9256dc18
+        ;
+	}
+	20% {
+		opacity: .6;
+        color: #9256dc42
+	}
+	40% {
+		opacity: .7;
+        color: #9256dc64
+	}
+	60% {
+		opacity: .8;
+        color: #9256dc78
+	}
+	80% {
+		opacity: .9;
+        color: #9256dca6
+	}
+	100% {
+		opacity: 1;
+        color: #9256dc
+        
+	}
+}
