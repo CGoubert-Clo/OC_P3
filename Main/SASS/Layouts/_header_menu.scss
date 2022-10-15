@@ -1,7 +1,18 @@
 .header_menu{
     height: 64px;
     &--logo{
-        position: absolute;
-        left: 25%;    
+        position: relative;
+        text-align: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;    
+        width: 42%;            
     }
+    &--arrow{
+        position: relative;
+        top: 26px;
+        left: 22px;
+        font-size: 24px;
+        color: black;
     }
+}
