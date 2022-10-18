@@ -1,6 +1,4 @@
 
-//Animation loader//
-
 .center{
     background-color: white;
     width: 100%;
@@ -74,9 +72,9 @@ span{
 
 
 
-  //Animations menus//
+  //Animations menus;
 
-  //Animation chargement//
+  //Animation chargement;
 
   .anim{
     animation: menus 2s both;
@@ -124,3 +122,63 @@ span{
         transform: translateY(0px);
     }
   }
+
+
+  //Animation validation;
+
+
+  .anim{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    text-overflow: ellipsis;
+    &:hover .box{
+      width: 70px;
+    }
+    &:hover .check::before{
+     animation: rotation 800ms 50ms both;
+    }
+    }
+
+
+
+    .textetest{
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      flex-grow: 1;
+    }
+
+    .prix{
+      align-self: flex-end;
+      padding: 0 15px 0 15px;
+    }
+
+    .anim .box{
+      width: 0;
+      overflow: hidden;
+      transition: width 800ms;
+    }
+    
+
+    .check{
+      height: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #99E2D0;
+      font-size: 1.7rem;
+      color: white;
+    }
+    
+
+    @keyframes rotation {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+    }
+

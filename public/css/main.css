@@ -483,6 +483,84 @@ span {
             transform: translateY(0px);
   }
 }
+.anim {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-overflow: ellipsis;
+}
+.anim:hover .box {
+  width: 70px;
+}
+.anim:hover .check::before {
+  -webkit-animation: rotation 800ms 50ms both;
+          animation: rotation 800ms 50ms both;
+}
+
+.textetest {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.prix {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 0 15px 0 15px;
+}
+
+.anim .box {
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 800ms;
+  transition: width 800ms;
+}
+
+.check {
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #99E2D0;
+  font-size: 1.7rem;
+  color: white;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .reservation a {
   text-decoration: none;
 }
@@ -884,16 +962,16 @@ span {
   margin-bottom: 6px;
   margin-top: 0;
   padding-top: 14px;
+  font-size: 16px;
 }
-.entrees--card p {
+.entrees--card .textetest p {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 4px;
-  font-size: 15px;
+  font-size: 14px;
   display: inline-block;
 }
 .entrees--card__prix {
-  position: absolute;
   right: 10%;
   font-size: 16px;
   font-weight: bold;
