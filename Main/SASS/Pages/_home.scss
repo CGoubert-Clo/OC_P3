@@ -169,12 +169,6 @@ html{
             padding-top: 0;
         }
     }
-    & .restaurants--card{
-        @media (min-width: 1024px) {
-            width: 35%;   
-
-        }
-    }
     &--card{
         height: 250px;
         background-color: white;
@@ -183,7 +177,12 @@ html{
         margin-bottom: 18px;
         border-radius: 20px;
         -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25); 
-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
+        box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 1024px) {
+        width: 35%;   
+    }
         &__img{
             height: 174px;
             width: 100%;
@@ -203,6 +202,9 @@ box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
             margin-bottom: 0;
             position: relative;
             top: -40px;
+            @media (min-width: 1024px) {
+                margin-top: 0;
+            }
         }
         &__text{
             padding-left: 4%;
@@ -218,9 +220,23 @@ box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
             font-size: 23px;
         }
 
+        &:nth-child(2){
+            & h3{
+                margin-top: -15px;
+            }
+        }
+        &:nth-child(3){
+            & h3{
+                margin-top: -15px;
+            }
+        }
+
         &:nth-child(4){
             & h3{
                 position: inherit;
+                @media (min-width: 1024px) {
+                    margin-top: 10px;
+                }
             }
             & p{
                 position: inherit;
@@ -232,6 +248,9 @@ box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
         &:nth-child(5){
             & h3{
                 position: inherit;
+                @media (min-width: 1024px) {
+                    margin-top: 10px;
+                }
             }
             & p{
                 position: inherit;
@@ -246,6 +265,8 @@ box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
         & a{
             text-decoration: none;
             color: black;
+            height: 250px;
+            overflow: hidden;
         }
     }
     
@@ -265,6 +286,9 @@ box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.25);
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 3px;
+}
+
+.empty{
 }
 
 

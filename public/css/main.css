@@ -884,11 +884,6 @@ html {
     padding-top: 0;
   }
 }
-@media (min-width: 1024px) {
-  .restaurants .restaurants--card {
-    width: 35%;
-  }
-}
 .restaurants--card {
   height: 250px;
   background-color: white;
@@ -898,6 +893,18 @@ html {
   border-radius: 20px;
   -webkit-box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .restaurants--card {
+    width: 35%;
+  }
 }
 .restaurants--card__img {
   height: 174px;
@@ -920,6 +927,11 @@ html {
   position: relative;
   top: -40px;
 }
+@media (min-width: 1024px) {
+  .restaurants--card__title {
+    margin-top: 0;
+  }
+}
 .restaurants--card__text {
   padding-left: 4%;
   margin-top: 4px;
@@ -933,8 +945,19 @@ html {
   left: 86%;
   font-size: 23px;
 }
+.restaurants--card:nth-child(2) h3 {
+  margin-top: -15px;
+}
+.restaurants--card:nth-child(3) h3 {
+  margin-top: -15px;
+}
 .restaurants--card:nth-child(4) h3 {
   position: inherit;
+}
+@media (min-width: 1024px) {
+  .restaurants--card:nth-child(4) h3 {
+    margin-top: 10px;
+  }
 }
 .restaurants--card:nth-child(4) p {
   position: inherit;
@@ -944,6 +967,11 @@ html {
 }
 .restaurants--card:nth-child(5) h3 {
   position: inherit;
+}
+@media (min-width: 1024px) {
+  .restaurants--card:nth-child(5) h3 {
+    margin-top: 10px;
+  }
 }
 .restaurants--card:nth-child(5) p {
   position: inherit;
@@ -957,6 +985,8 @@ html {
 .restaurants--card a {
   text-decoration: none;
   color: black;
+  height: 250px;
+  overflow: hidden;
 }
 
 .nouveau {
@@ -978,6 +1008,11 @@ html {
   height: 270px;
   width: 100%;
   position: relative;
+}
+@media (min-width: 1024px) {
+  .banner--img {
+    height: 540px;
+  }
 }
 
 .page {
@@ -1059,8 +1094,34 @@ html {
   font-weight: bold;
 }
 
+.menu_btn {
+  margin: auto;
+  width: auto;
+  height: auto;
+}
 .menu_btn a {
   text-decoration: none;
+}
+.menu--btn {
+  margin: auto;
+}
+.menu--btn a {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .menus_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .menus_list > * {
+    width: 100%;
+  }
 }
 
 .footer {
