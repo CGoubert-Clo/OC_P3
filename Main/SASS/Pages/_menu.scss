@@ -70,6 +70,9 @@
             margin-top: 0;
             padding-top: 14px;
             font-size: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis
         }
         & .textetest p{
             margin-top: 0;
@@ -77,9 +80,12 @@
             padding-bottom: 4px;
             font-size: 14px;
             display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
         }
         &__prix{
-            right: 10%;
             font-size: 16px;
             font-weight: bold;
         }
@@ -112,7 +118,7 @@
     }
     & >*{
         @media (min-width: 1024px) {
-            width: 100%;
+            width: 33%;
         }
     }
 }

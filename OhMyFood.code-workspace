@@ -1,19 +1,19 @@
 {
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
+    // "folders": [
+    //     {
+    //         "path": "."
+    //     }
+    // ],
     "settings": {
         "liveSassCompile.settings.formats":[
             {
                 "format": "expanded",
                 "extensionName": ".css",
-                "savePath": "./Public/css"
+                "savePath": "/Public/css"
             },
 
         ],
-        "liveSassCompile.settings.generateMap": false,
+        "liveSassCompile.settings.generateMap": true,
         "liveSassCompile.settings.autoprefix": [
             "> 1%",
             "last 2 versions"

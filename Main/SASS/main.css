@@ -499,6 +499,7 @@ span {
 
 .check {
   height: 100%;
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -989,6 +990,9 @@ html {
   margin-top: 0;
   padding-top: 14px;
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees--card .textetest p {
   margin-top: 0;
@@ -996,9 +1000,12 @@ html {
   padding-bottom: 4px;
   font-size: 14px;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .entrees--card__prix {
-  right: 10%;
   font-size: 16px;
   font-weight: bold;
 }
@@ -1026,7 +1033,7 @@ html {
 }
 @media (min-width: 1024px) {
   .menus_list > * {
-    width: 100%;
+    width: 33%;
   }
 }
 
