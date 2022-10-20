@@ -79,34 +79,34 @@ span{
   .anim{
     animation: menus 2s both;
     &-1{
-        animation-delay: 0.1s;
-    }
-    &-2{
         animation-delay: 0.2s;
     }
-    &-3{
-        animation-delay: 0.3s;
-    }
-    &-4{
+    &-2{
         animation-delay: 0.4s;
     }
-    &-5{
-        animation-delay: 0.5s;
-    }
-    &-6{
+    &-3{
         animation-delay: 0.6s;
     }
-    &-7{
-        animation-delay: 0.7s;
-    }
-    &-8{
+    &-4{
         animation-delay: 0.8s;
     }
+    &-5{
+        animation-delay: 1s;
+    }
+    &-6{
+        animation-delay: 1.2s;
+    }
+    &-7{
+        animation-delay: 1.4s;
+    }
+    &-8{
+        animation-delay: 1.6s;
+    }
     &-9{
-        animation-delay: 0.9s;
+        animation-delay: 1.8s;
     }
     &-10{
-        animation-delay: 1s;
+        animation-delay: 2s;
     }
   }
 

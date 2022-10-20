@@ -1,0 +1,1090 @@
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.center {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  -webkit-animation: center 2s 1s both;
+          animation: center 2s 1s both;
+}
+
+.ring {
+  position: relative;
+  top: 25%;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-animation: ring 2s linear infinite;
+          animation: ring 2s linear infinite;
+}
+.ring::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black;
+}
+
+span {
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #9356DC;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #FF79DA;
+  }
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #9356DC;
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #FF79DA;
+  }
+}
+@-webkit-keyframes center {
+  from {
+    opacity: 100%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes off {
+  from {
+    opacity: 90%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+@keyframes off {
+  from {
+    opacity: 90%;
+  }
+  to {
+    display: none;
+    opacity: 0%;
+    z-index: -1;
+  }
+}
+.anim {
+  -webkit-animation: menus 2s both;
+          animation: menus 2s both;
+}
+.anim-1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.anim-2 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.anim-3 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.anim-4 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.anim-5 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.anim-6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.anim-7 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+.anim-8 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+.anim-9 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.anim-10 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes menus {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes menus {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.anim {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  text-overflow: ellipsis;
+}
+.anim:hover .box {
+  width: 70px;
+}
+.anim:hover .check::before {
+  -webkit-animation: rotation 800ms 50ms both;
+          animation: rotation 800ms 50ms both;
+}
+
+.textetest {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.prix {
+  align-self: flex-end;
+  padding: 0 15px 0 15px;
+}
+
+.anim .box {
+  width: 0;
+  overflow: hidden;
+  transition: width 800ms;
+}
+
+.check {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99E2D0;
+  font-size: 1.7rem;
+  color: white;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.reservation a {
+  text-decoration: none;
+  color: white;
+}
+.reservation--btn {
+  color: white;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 16px;
+  width: 218px;
+  height: 32px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, 25%, #cf64dc, #b35cdc, #9356dc);
+  box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+  transition: box-shadow 200ms;
+}
+.reservation--btn:hover {
+  opacity: 0.96;
+  box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.95);
+}
+
+.menu--btn {
+  color: white;
+  margin-left: 25%;
+  margin-right: 20%;
+  padding-top: 15px;
+  height: 35px;
+  width: 188px;
+  border-radius: 45px;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, #ff79da, #e86edb, 25%, #cf64dc, #b35cdc, #9356dc);
+  box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.55);
+  transition: box-shadow 200ms;
+}
+.menu--btn:hover {
+  opacity: 0.96;
+  box-shadow: 0px 3px 15px -4px rgba(0, 0, 0, 0.95);
+}
+
+.fa-heart {
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  padding: 0.2em;
+}
+.fa-heart::after {
+  content: "\f004";
+  font-weight: bold;
+  color: #9356DC;
+  position: absolute;
+  top: 5px;
+  opacity: 0;
+  right: 5px;
+  transition: opacity 600ms;
+}
+.fa-heart:hover::after {
+  opacity: 1;
+}
+
+.menu-heart {
+  background-color: rgba(247, 247, 247, 0.968627451);
+}
+.menu-heart::after {
+  position: relative;
+  right: 22px;
+  top: 0px;
+}
+
+.header_home {
+  height: 62px;
+  background-color: white;
+}
+.header_home--logo {
+  position: relative;
+  height: 32px;
+  top: 20px;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 158px;
+}
+.header_home--arrow {
+  display: none;
+}
+
+.header_menu {
+  height: 64px;
+}
+.header_menu--logo {
+  position: relative;
+  text-align: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 158px;
+}
+.header_menu--arrow {
+  position: relative;
+  top: 26px;
+  left: 22px;
+  font-size: 24px;
+  color: black;
+}
+
+html {
+  background-color: #f7f7f7;
+}
+
+.location {
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  font-size: 16px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 4px 4px -2px rgba(117, 117, 117, 0.36);
+}
+.location--bar {
+  width: 158px;
+  height: auto;
+  margin: auto;
+}
+.location--text {
+  display: inline;
+  background-color: #eaeaea;
+  border: none;
+  width: 128px;
+}
+.location--text::-moz-placeholder {
+  color: black;
+}
+.location--text:-ms-input-placeholder {
+  color: black;
+}
+.location--text::placeholder {
+  color: black;
+}
+.location--text:focus {
+  border: none;
+  outline: none;
+}
+.location--icone {
+  margin-right: 4%;
+  color: rgb(68, 68, 68);
+}
+
+.reservation {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 60px;
+  font-weight: normal;
+  background-color: #f7f7f7;
+}
+.reservation--title {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.reservation--subtitle {
+  font-size: 18px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 0;
+  font-weight: 100;
+  opacity: 0.8;
+}
+
+.explication {
+  margin-bottom: 38px;
+  background-color: white;
+  padding-top: 1px;
+}
+.explication--title {
+  margin-top: 46px;
+  margin-left: 5%;
+  margin-bottom: 26px;
+}
+@media (min-width: 1024px) {
+  .explication--title {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+  }
+}
+.explication--cards {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8%;
+}
+@media (min-width: 1024px) {
+  .explication--cards {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+}
+.explication--card {
+  margin-right: 6%;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 26px;
+  box-shadow: 0px 6px 15px -6px rgba(0, 0, 0, 0.52);
+}
+@media (min-width: 1024px) {
+  .explication--card {
+    margin-right: 3%;
+    width: 300px;
+  }
+}
+.explication--card__number {
+  position: relative;
+  color: white;
+  background-color: #9356DC;
+  left: -10px;
+  top: -1px;
+  width: 24px;
+  line-height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  height: 24px;
+  font-size: 14px;
+}
+.explication--card__icon {
+  margin-left: 2%;
+  margin-right: 7%;
+  font-size: 20px;
+  padding-top: 16px;
+  color: grey;
+}
+.explication--card .list-icon {
+  font-size: 18px;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+.explication--card .store-icon {
+  color: #9356DC;
+  font-size: 18px;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+.explication--card__title {
+  font-weight: bold;
+}
+.explication p {
+  display: inline-block;
+}
+
+.restaurants {
+  background-color: #f7f7f7;
+  margin-bottom: 62px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.restaurants--title {
+  margin-left: 5%;
+  padding-top: 26px;
+  margin-bottom: 25px;
+  margin-top: 0;
+}
+@media (min-width: 1024px) {
+  .restaurants--title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: 0;
+    padding-top: 0;
+  }
+}
+.restaurants--card {
+  height: 250px;
+  background-color: white;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 18px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px -5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .restaurants--card {
+    width: 35%;
+  }
+}
+.restaurants--card__img {
+  height: 174px;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants--card img {
+  width: 100%;
+  height: 12rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants--card__title {
+  padding-left: 4%;
+  font-size: 18px;
+  margin-top: 14px;
+  margin-bottom: 0;
+  position: relative;
+  top: -40px;
+}
+@media (min-width: 1024px) {
+  .restaurants--card__title {
+    margin-top: 0;
+  }
+}
+.restaurants--card__text {
+  padding-left: 4%;
+  margin-top: 4px;
+  position: relative;
+  top: -40px;
+}
+.restaurants--card__heart {
+  display: inline;
+  position: relative;
+  top: -94px;
+  left: 86%;
+  font-size: 23px;
+}
+.restaurants--card:nth-child(2) h3 {
+  margin-top: -15px;
+}
+.restaurants--card:nth-child(3) h3 {
+  margin-top: -15px;
+}
+.restaurants--card:nth-child(4) h3 {
+  position: inherit;
+}
+@media (min-width: 1024px) {
+  .restaurants--card:nth-child(4) h3 {
+    margin-top: 10px;
+  }
+}
+.restaurants--card:nth-child(4) p {
+  position: inherit;
+}
+.restaurants--card:nth-child(4) i {
+  top: -50px;
+}
+.restaurants--card:nth-child(5) h3 {
+  position: inherit;
+}
+@media (min-width: 1024px) {
+  .restaurants--card:nth-child(5) h3 {
+    margin-top: 10px;
+  }
+}
+.restaurants--card:nth-child(5) p {
+  position: inherit;
+}
+.restaurants--card:nth-child(5) i {
+  top: -50px;
+}
+.restaurants--card .note {
+  top: -155px;
+}
+.restaurants--card a {
+  text-decoration: none;
+  color: black;
+  height: 250px;
+  overflow: hidden;
+}
+
+.nouveau {
+  position: relative;
+  width: 82px;
+  top: -175px;
+  left: 70%;
+  background-color: #99E2D0;
+  color: #008766;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 3px;
+}
+
+.banner--img {
+  height: 270px;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .banner--img {
+    height: 540px;
+  }
+}
+
+.page {
+  border-radius: 35px;
+  background-color: #f7f7f7;
+  width: 100%;
+  padding-top: 12px;
+  position: relative;
+  margin-top: -56px;
+  padding-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  display: flex;
+}
+.title h1 {
+  font-family: "Shrikhand", cursive, sans-serif;
+  margin-left: 4%;
+  font-size: 28px;
+  font-weight: 100;
+}
+.title i {
+  font-size: 22px;
+  margin-top: 20px;
+  padding-top: 6px;
+  position: absolute;
+  right: 3%;
+}
+
+.entrees {
+  margin-bottom: 44px;
+}
+.entrees--title {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 3%;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+.entrees--title__span {
+  border-top: 3px solid #99E2D0;
+  width: 42px;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 0;
+  position: relative;
+  top: -8px;
+}
+.entrees--card {
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding-left: 3%;
+  height: 68px;
+  margin-bottom: 12px;
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.3);
+}
+.entrees--card h3 {
+  margin-bottom: 6px;
+  margin-top: 0;
+  padding-top: 14px;
+  font-size: 16px;
+}
+.entrees--card .textetest p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  font-size: 14px;
+  display: inline-block;
+}
+.entrees--card__prix {
+  right: 10%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.menu_btn {
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+.menu_btn a {
+  text-decoration: none;
+}
+.menu--btn {
+  margin: auto;
+}
+.menu--btn a {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .menus_list {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .menus_list > * {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 36px;
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.footer--title {
+  font-family: "Shrikhand", cursive, sans-serif;
+  font-weight: normal;
+  padding-left: 10%;
+  padding-top: 26px;
+  font-size: 32px;
+}
+@media (min-width: 1024px) {
+  .footer--title {
+    padding-left: 8%;
+    align-self: center;
+  }
+}
+.footer ul {
+  list-style-type: none;
+  font-weight: normal;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .footer ul {
+    margin-top: 18px;
+    padding-top: 26px;
+  }
+}
+.footer ul li {
+  margin-bottom: 15px;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer ul i {
+  padding-right: 3%;
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .footer ul i {
+    padding-right: 1%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}/*# sourceMappingURL=main.css.map */
