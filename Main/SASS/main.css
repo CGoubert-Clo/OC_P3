@@ -736,6 +736,9 @@ html {
     margin-right: 3%;
     width: 300px;
   }
+  .explication--card:hover {
+    background-color: #f5edff;
+  }
 }
 .explication--card__number {
   position: relative;
@@ -901,12 +904,21 @@ html {
   height: 250px;
   overflow: hidden;
 }
+.restaurants--footer {
+  position: relative;
+  top: 65px;
+}
+@media (min-width: 1024px) {
+  .restaurants--footer {
+    top: 165px;
+  }
+}
 
 .nouveau {
-  position: relative;
+  position: absolute;
   width: 82px;
-  top: -175px;
-  left: 70%;
+  right: 8%;
+  margin-top: -150px;
   background-color: #99E2D0;
   color: #008766;
   font-size: 16px;
@@ -916,15 +928,28 @@ html {
   padding-bottom: 8px;
   border-radius: 3px;
 }
+@media (min-width: 1024px) {
+  .nouveau {
+    position: relative;
+    right: 0;
+    left: 75%;
+  }
+}
 
+.banner {
+  max-height: 32rem;
+  overflow: hidden;
+}
 .banner--img {
-  height: 270px;
   width: 100%;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 20rem;
 }
 @media (min-width: 1024px) {
   .banner--img {
-    height: 540px;
+    max-height: 32rem;
   }
 }
 
@@ -1029,6 +1054,8 @@ html {
   .menus_list {
     display: flex;
     justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 @media (min-width: 1024px) {

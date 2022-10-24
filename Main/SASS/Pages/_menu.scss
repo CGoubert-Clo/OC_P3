@@ -1,12 +1,15 @@
 .banner{
+max-height: 32rem;
+    overflow: hidden;
     &--img{
-        height: 270px;
         width: 100%;
         position: relative;
+        object-fit: cover;
+        max-height: 20rem;
         @media (min-width: 1024px) {
-            height: 540px;
+            max-height: 32rem;
         }
-    }
+}
 }
 
 .page{
@@ -115,6 +118,8 @@
     @media (min-width: 1024px) {
         display: flex;
         justify-content: space-around;
+        margin-left: 3%;
+        margin-right: 3%;
     }
     & >*{
         @media (min-width: 1024px) {
