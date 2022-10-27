@@ -418,44 +418,44 @@ span {
           animation: menus 2s both;
 }
 .anim-1 {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
-}
-.anim-2 {
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-.anim-3 {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
-}
-.anim-4 {
+.anim-2 {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-.anim-5 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.anim-6 {
+.anim-3 {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
 }
-.anim-7 {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-}
-.anim-8 {
+.anim-4 {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
-.anim-9 {
-  -webkit-animation-delay: 0.9s;
-          animation-delay: 0.9s;
-}
-.anim-10 {
+.anim-5 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+.anim-6 {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.anim-7 {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+.anim-8 {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+.anim-9 {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.anim-10 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes menus {
@@ -525,6 +525,7 @@ span {
 
 .check {
   height: 100%;
+  width: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -806,6 +807,9 @@ html {
     margin-right: 3%;
     width: 300px;
   }
+  .explication--card:hover {
+    background-color: #f5edff;
+  }
 }
 .explication--card__number {
   position: relative;
@@ -922,10 +926,7 @@ html {
 .restaurants--card__title {
   padding-left: 4%;
   font-size: 18px;
-  margin-top: 14px;
   margin-bottom: 0;
-  position: relative;
-  top: -40px;
 }
 @media (min-width: 1024px) {
   .restaurants--card__title {
@@ -933,15 +934,13 @@ html {
   }
 }
 .restaurants--card__text {
+  margin-top: 6px;
   padding-left: 4%;
-  margin-top: 4px;
-  position: relative;
-  top: -40px;
 }
 .restaurants--card__heart {
   display: inline;
   position: relative;
-  top: -94px;
+  top: -48px;
   left: 86%;
   font-size: 23px;
 }
@@ -987,13 +986,23 @@ html {
   color: black;
   height: 250px;
   overflow: hidden;
+  position: relative;
+}
+.restaurants--footer {
+  position: relative;
+  top: 30px;
+}
+@media (min-width: 1024px) {
+  .restaurants--footer {
+    top: 24px;
+  }
 }
 
 .nouveau {
-  position: relative;
+  position: absolute;
   width: 82px;
-  top: -175px;
-  left: 70%;
+  right: 15px;
+  margin-top: -150px;
   background-color: #99E2D0;
   color: #008766;
   font-size: 16px;
@@ -1003,15 +1012,27 @@ html {
   padding-bottom: 8px;
   border-radius: 3px;
 }
+@media (min-width: 1024px) {
+  .nouveau {
+    position: absolute;
+    right: 30px;
+  }
+}
 
+.banner {
+  max-height: 32rem;
+  overflow: hidden;
+}
 .banner--img {
-  height: 270px;
   width: 100%;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 20rem;
 }
 @media (min-width: 1024px) {
   .banner--img {
-    height: 540px;
+    max-height: 32rem;
   }
 }
 
@@ -1080,6 +1101,9 @@ html {
   margin-top: 0;
   padding-top: 14px;
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entrees--card .textetest p {
   margin-top: 0;
@@ -1087,9 +1111,12 @@ html {
   padding-bottom: 4px;
   font-size: 14px;
   display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
 }
 .entrees--card__prix {
-  right: 10%;
   font-size: 16px;
   font-weight: bold;
 }
@@ -1116,11 +1143,13 @@ html {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 @media (min-width: 1024px) {
   .menus_list > * {
-    width: 100%;
+    width: 33%;
   }
 }
 
@@ -1185,4 +1214,4 @@ html {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-}
+}/*# sourceMappingURL=main.css.map */
